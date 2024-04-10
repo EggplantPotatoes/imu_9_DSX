@@ -1,5 +1,5 @@
 # imu_9_DSF
-  基于STM32G431结合三轴加速度计，三轴陀螺仪，三轴磁力计实现的九轴数据融合，可输出欧拉角，四元数等相关数据
+  基于STM32G431RBT6结合三轴加速度计，三轴陀螺仪，三轴磁力计实现的九轴数据融合，可输出欧拉角，四元数等相关数据
 
 # 硬件平台介绍 
 
@@ -7,10 +7,13 @@
 
 ![image](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/39094977-7f73-438c-897c-242705e7231c)        
 
-
+使用USB_TypeC供电，引出12路IO口，其中包括3路UART，可用于二次开发
 
 ![image](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/ad68d0ac-a39e-4054-aff9-eaf613fa6b94)
 
+USB输出数据，连接VOFA+上位机软件查看相关数据波形
+
+![image](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/bcfadb9a-b447-4928-8106-482de14f5186)
 
 
 # 算法说明
