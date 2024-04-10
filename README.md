@@ -15,6 +15,8 @@ USB输出数据，使用USB CDC（VCP）虚拟串口连接VOFA+上位机软件�
 
 ![image](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/bcfadb9a-b447-4928-8106-482de14f5186)
 
+![image](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/3149374a-db99-4ee6-ac98-71a8e6f76845)
+
 
 # 软件介绍
 
