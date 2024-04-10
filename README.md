@@ -11,7 +11,7 @@
 
 ![image](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/ad68d0ac-a39e-4054-aff9-eaf613fa6b94)
 
-USB输出数据，使用USB CDC（VCP）虚拟串口连接VOFA+上位机软件查看相关数据波形，无需外接U转串模块
+USB输出数据，使用USB CDC（VCP）虚拟串口连接VOFA+上位机软件查看相关数据波形，无需外接U转串模块，也不需要安装驱动
 
 ![image](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/bcfadb9a-b447-4928-8106-482de14f5186)
 
@@ -32,6 +32,10 @@ USB输出数据，使用USB CDC（VCP）虚拟串口连接VOFA+上位机软件�
   
   原始算法开源地址链接https://github.com/xioTechnologies/Fusion?tab=readme-ov-file
   
-
+  数据融合算法坐标系使用ENU，即X轴指正北，Y指正东，Z轴指天，代码中有宏定义可以修改相关坐标系，但是要注意地磁的轴向与六轴不一致，需要手动调整
 # 使用说明
 
+  USB——type线（手机充电线）连接电脑，电脑端会出现一个COM口，使用串口工具既可以看到相关数据输出，默认欧拉角输出，可以输出欧拉角，四元数，去掉重力之后的加速度，三轴加速度原始数据，三轴陀螺仪原始数据，三轴地磁原始数据
+
+
+  校准使用命令行，相关命令如下：
