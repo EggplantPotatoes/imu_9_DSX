@@ -3,6 +3,8 @@
 
 # 硬件平台介绍 
 
+![image](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/b6e65e56-70e4-43bf-97b4-7d0e93f4c01f)
+
 # 算法说明
 
 以STM32G431为主控MCU，三轴加速度计和三轴陀螺仪使用LSM6DS3TR，三轴磁力计使用LIS2MDLTR，姿态融合算法使用Fusion,该算法基于 Madgwick 博士论文第 7 章中提出的修订版 AHRS 算法，这是与第 3 章中介绍的更为人所知的初始 AHRS 算法（通常称为 Madgwick 算法）不同的算法。
