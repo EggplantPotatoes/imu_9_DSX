@@ -3,7 +3,9 @@
 
 # 硬件平台介绍 
 
-![image](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/b6e65e56-70e4-43bf-97b4-7d0e93f4c01f)
+![image](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/39094977-7f73-438c-897c-242705e7231c)  ![image](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/ad68d0ac-a39e-4054-aff9-eaf613fa6b94)
+
+
 
 # 算法说明
 
