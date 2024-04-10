@@ -18,9 +18,15 @@ USB输出数据，使用USB CDC（VCP）虚拟串口连接VOFA+上位机软件�
 
 # 软件介绍
 
+  软件开发使用STM32CubeMX生成底层驱动，使用STM32CubeIDE开发代码
+  两路硬件IIC分别连接六轴LSM6DS3TR和地磁LIS2MDLTR
+  USB使用CDC虚拟出串口，与上位机vofa+通信
+  硬件定时器TIM2定时1ms中断采集九轴数据，进行数据融合并输出数据，故数据融合算法的运行频率是1000Hz
+  使用命令行修改配置
   姿态融合算法使用Fusion,该算法基于 Madgwick 博士论文第 7 章中提出的修订版 AHRS 算法，这是与第 3 章中介绍的更为人所知的初始 AHRS 算法（通常称为 Madgwick 算法）不同的算法。
-
+  
   原始算法开源地址链接https://github.com/xioTechnologies/Fusion?tab=readme-ov-file
+  
 
 # 使用说明
 
