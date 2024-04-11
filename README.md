@@ -49,7 +49,7 @@ USB输出数据，使用USB CDC（VCP）虚拟串口连接VOFA+上位机软件�
         
           地磁校准	          cmd cali mag 
 
-	校准一次之后零点存到G431内部Flash中，掉电保存。
+  校准一次之后零点存到G431内部Flash中，掉电保存。
  
   数据输出：
   
@@ -69,5 +69,13 @@ USB输出数据，使用USB CDC（VCP）虚拟串口连接VOFA+上位机软件�
       
         九轴原始数据  cmd output acc_gyro_mag 
       
-        修改数据输出模式之后存到G431内部Flash中，掉电保存
-  
+ 修改数据输出模式之后存到G431内部Flash中，掉电保存。
+
+  欧拉角数据输出：
+![image](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/28d125b1-96ab-4d65-be14-47c66dbbb821)
+
+
+九轴原始数据输出：
+
+![image](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/c867346f-cf3f-42a0-9d66-2fca4e2a18f2)
+
