@@ -55,7 +55,7 @@ USB输出数据，使用USB CDC（VCP）虚拟串口连接VOFA+上位机软件�
   
   数据输出可选，默认是欧拉角输出使用命令行进行切换，相关命令如下：
   
-        欧拉角     cmd output eular 
+        欧拉角     cmd output euler 
       
         四元数    cmd output quaternion 
       
