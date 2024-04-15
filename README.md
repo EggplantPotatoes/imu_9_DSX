@@ -1,6 +1,7 @@
 # imu_9_DSF
   一款IMU九轴姿态传感器，基于STM32G431RBT6结合三轴加速度计，三轴陀螺仪，三轴磁力计实现的九轴数据融合，可输出欧拉角，四元数等相关数据
 
+  模块购买网址：https://item.taobao.com/item.htm?abbucket=9&id=784316261466&spm=a230r.7195193.1997079397.34.2dbe2731CdNSQF
 # 硬件介绍 
 
 以STM32G431为主控MCU，三轴加速度计和三轴陀螺仪使用LSM6DS3TR，三轴磁力计使用LIS2MDLTR
