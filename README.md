@@ -40,10 +40,15 @@ USB输出数据，使用USB CDC（VCP）虚拟串口连接VOFA+上位机软件�
   
  数据融合算法参数调试：
  
- 先调试六轴，将attitude->flag.use_mag改为0
- attitude->flag.use_mag = 0;				//不使用地磁
+ 1、六轴，将attitude->flag.use_mag改为0
+ 
+ attitude->flag.use_mag = 0;	//不使用地磁
+ 
  查看roll，pitch数据波形，调整 attitude->parameter.error_kp	attitude->parameter.error_ki 两个参数;
- 如果加上地磁，则需要yaw输出，调整attitude->parameter.correct_kp参数
+ 
+ 2、九轴
+ 
+ 需要yaw输出，调整attitude->parameter.correct_kp参数
 
   校准：
   
