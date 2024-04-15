@@ -30,18 +30,24 @@ USB输出数据，使用USB CDC（VCP）虚拟串口连接VOFA+上位机软件�
   
   使用命令行修改配置
   
-  姿态融合算法使用Fusion,该算法基于 Madgwick 博士论文第 7 章中提出的修订版 AHRS 算法，这是与第 3 章中介绍的更为人所知的初始 AHRS 算法（通常称为 Madgwick 算法）不同的算法。
+  数据融合算法，接入九轴或六轴（可屏蔽磁力计）传感器数据，传入相关变量中，可以解算出姿态角，对外提供四元数、旋转矩阵、世界加速度等相关信息。
   
-  原始算法开源地址链接https://github.com/xioTechnologies/Fusion?tab=readme-ov-file
+  数据融合算法坐标系使用ENU，即X轴指正北，Y指正东，Z轴指天，但是要注意地磁的轴向与六轴不一致，需要手动调整
   
-  数据融合算法坐标系使用ENU，即X轴指正北，Y指正东，Z轴指天，代码中有宏定义可以修改相关坐标系，但是要注意地磁的轴向与六轴不一致，需要手动调整
 # 使用说明
 
   USB_Type线（手机充电线）连接电脑，电脑端会出现一个COM口，使用串口工具既可以看到相关数据输出，默认欧拉角输出，可以输出欧拉角，四元数，去掉重力之后的三轴加速度，三轴加速度原始数据，三轴陀螺仪原始数据，三轴地磁原始数据
+  
+ 数据融合算法参数调试：
+ 
+ 先调试六轴，将attitude->flag.use_mag改为0
+ attitude->flag.use_mag = 0;				//不使用地磁
+ 查看roll，pitch数据波形，调整 attitude->parameter.error_kp	attitude->parameter.error_ki 两个参数;
+ 如果加上地磁，则需要yaw输出，调整attitude->parameter.correct_kp参数
 
   校准：
   
-  使用之前需要校准，校准可以提高传感器精度。六轴校准，需要将板子水平放置；地磁校准需要将板子三个轴向转动。
+  使用之前需要校准，校准可以提高传感器精度。六轴校准，需要将板子水平放置；地磁校准代码编写完成，目前没有调试，后续有时间再实现。
   
   校准使用命令行，命令行格式是以 空格分割，回车换行结束命令。相关命令如下：
 	
@@ -59,7 +65,7 @@ USB输出数据，使用USB CDC（VCP）虚拟串口连接VOFA+上位机软件�
       
         四元数    cmd output quaternion 
       
-        除重力后加速度   cmd output earth_a 
+        世界加速度   cmd output earth_a 
       
         三轴加速度    cmd output acc 
       
