@@ -82,7 +82,7 @@ USB输出数据，使用USB CDC（VCP）虚拟串口连接VOFA+上位机软件�
       
  修改数据输出模式之后存到G431内部Flash中，掉电保存。
 
- ![image](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/37f13227-ef72-4686-8c33-b1ac70bfc787)
+ ![image](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/d44aef3f-734e-4045-a3c2-0d9a5d655076)
 
 
   欧拉角数据输出：
