@@ -5,7 +5,7 @@
 
 以STM32G431为主控MCU，三轴加速度计和三轴陀螺仪使用LSM6DS3TR，三轴磁力计使用LIS2MDLTR
 
-![4e6c57cc6b0c363d7903f90133c7fc6](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/fa5879bf-4752-479c-a861-a54261914bf8)
+![89bdf6e9bb331a66cf012b38ee810f6](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/87b18bb4-3738-48fe-8770-2d7ea28594d6)
 
 使用USB_TypeC供电，引出12路IO口，其中包括3路UART，可用于二次开发
 
