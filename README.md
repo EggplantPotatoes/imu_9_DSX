@@ -5,11 +5,11 @@
 
 以STM32G431为主控MCU，三轴加速度计和三轴陀螺仪使用LSM6DS3TR，三轴磁力计使用LIS2MDLTR
 
-![image](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/39094977-7f73-438c-897c-242705e7231c)        
+![4e6c57cc6b0c363d7903f90133c7fc6](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/fa5879bf-4752-479c-a861-a54261914bf8)
 
 使用USB_TypeC供电，引出12路IO口，其中包括3路UART，可用于二次开发
 
-![image](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/ad68d0ac-a39e-4054-aff9-eaf613fa6b94)
+![4e6c57cc6b0c363d7903f90133c7fc6](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/2e5aab4b-58f1-4bf0-974a-5e9c38a0c96e)
 
 USB输出数据，使用USB CDC（VCP）虚拟串口连接VOFA+上位机软件查看相关数据波形，无需外接U转串模块，也不需要安装驱动
 
