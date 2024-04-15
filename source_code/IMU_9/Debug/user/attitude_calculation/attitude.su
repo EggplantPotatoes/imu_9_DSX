@@ -1,0 +1,3 @@
+../user/attitude_calculation/attitude.c:7:6:init_attitude	16	static
+../user/attitude_calculation/attitude.c:75:6:simple_3d_trans	24	static
+../user/attitude_calculation/attitude.c:93:6:calculate_attitude	104	static

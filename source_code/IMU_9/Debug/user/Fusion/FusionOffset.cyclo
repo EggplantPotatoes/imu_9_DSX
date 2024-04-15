@@ -1,0 +1,5 @@
+../user/Fusion/FusionMath.h:201:28:FusionVectorAdd	1
+../user/Fusion/FusionMath.h:216:28:FusionVectorSubtract	1
+../user/Fusion/FusionMath.h:240:28:FusionVectorMultiplyScalar	1
+../user/Fusion/FusionOffset.c:40:6:FusionOffsetInitialise	1
+../user/Fusion/FusionOffset.c:54:14:FusionOffsetUpdate	5

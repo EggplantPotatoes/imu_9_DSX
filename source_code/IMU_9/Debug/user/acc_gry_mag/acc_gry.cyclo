@@ -1,0 +1,3 @@
+../user/acc_gry_mag/acc_gry.c:27:9:acc_gyro_init	4
+../user/acc_gry_mag/acc_gry.c:54:6:acc_gyro_sample_data	1
+../user/acc_gry_mag/acc_gry.c:74:6:set_acc_gyro_offset	2

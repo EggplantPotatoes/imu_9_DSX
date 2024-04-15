@@ -1,0 +1,7 @@
+../user/acc_gry_mag/magnetic.c:24:6:mag_sample_offset_data	1
+../user/acc_gry_mag/magnetic.c:39:6:mag_Write_Offset	1
+../user/acc_gry_mag/magnetic.c:55:6:software_Delay	2
+../user/acc_gry_mag/magnetic.c:65:13:mag_wait_data_update	2
+../user/acc_gry_mag/magnetic.c:77:6:mag_sample_data	1
+../user/acc_gry_mag/magnetic.c:90:9:mag_init	4
+../user/acc_gry_mag/magnetic.c:129:6:mag_set_offset	10

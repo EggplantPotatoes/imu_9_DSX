@@ -1,0 +1,4 @@
+../user/data_filter/data_filter.c:17:6:high_pass_filter	24	static
+../user/data_filter/data_filter.c:41:6:LowPassFilter_RC	32	static
+../user/data_filter/data_filter.c:57:6:bubblesort	24	static
+../user/data_filter/data_filter.c:84:9:window_filter	24	static

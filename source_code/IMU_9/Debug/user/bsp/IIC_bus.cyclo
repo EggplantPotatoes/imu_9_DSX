@@ -1,0 +1,8 @@
+../user/bsp/IIC_bus.c:21:16:I2C1_WriteReg	2
+../user/bsp/IIC_bus.c:40:16:I2C1_ReadReg	2
+../user/bsp/IIC_bus.c:58:9:BSP_I2C1_WriteReg	2
+../user/bsp/IIC_bus.c:76:9:BSP_I2C1_ReadReg	2
+../user/bsp/IIC_bus.c:94:16:I2C3_ReadReg	2
+../user/bsp/IIC_bus.c:105:16:I2C3_WriteReg	2
+../user/bsp/IIC_bus.c:123:9:BSP_I2C3_WriteReg	2
+../user/bsp/IIC_bus.c:141:9:BSP_I2C3_ReadReg	2

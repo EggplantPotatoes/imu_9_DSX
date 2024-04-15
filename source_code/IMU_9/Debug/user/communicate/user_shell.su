@@ -1,0 +1,8 @@
+../Drivers/CMSIS/Include/core_cm4.h:1933:34:__NVIC_SystemReset	4	static,ignoring_inline_asm
+../user/communicate/user_shell.c:25:5:cmd_cali	24	static
+../user/communicate/user_shell.c:55:5:cmd_reset	24	static,ignoring_inline_asm
+../user/communicate/user_shell.c:73:5:cmd_output	24	static
+../user/communicate/user_shell.c:142:5:cmd_version_read	24	static
+../user/communicate/user_shell.c:170:6:user_shell_init	24	static
+../user/communicate/user_shell.c:182:5:user_shell_recive_bytes	24	static
+../user/communicate/user_shell.c:190:6:user_shell_console_process	4	static

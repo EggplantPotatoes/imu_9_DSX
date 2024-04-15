@@ -1,0 +1,2 @@
+../user/data_filter/kalman_filter.c:17:6:kalman_init	4	static
+../user/data_filter/kalman_filter.c:38:6:loop_kalman	32	static

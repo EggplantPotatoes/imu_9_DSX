@@ -1,0 +1,7 @@
+../user/attitude_calculation/my_math.c:9:7:fast_sqrt	32	static
+../user/attitude_calculation/my_math.c:30:7:translateAngle	16	static
+../user/attitude_calculation/my_math.c:44:7:my_sin	24	static
+../user/attitude_calculation/my_math.c:60:7:my_cos	16	static
+../user/attitude_calculation/my_math.c:80:7:arctan1	24	static
+../user/attitude_calculation/my_math.c:93:7:arctan2	24	static
+../user/attitude_calculation/my_math.c:130:7:arcsin	16	static

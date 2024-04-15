@@ -1,0 +1,10 @@
+D:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:224:5:fputc	1
+D:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:222:5:fgetc	1
+../user/vofa_debug/debug.c:37:6:uart_debug_init	1
+../user/vofa_debug/debug.c:44:6:HAL_UART_RxCpltCallback	1
+../user/vofa_debug/debug.c:52:6:vofa_FireWater_output	1
+../user/vofa_debug/debug.c:58:6:vofa_JustFloat_output	1
+../user/vofa_debug/debug.c:72:6:usb_printf	1
+../user/vofa_debug/debug.c:85:6:usb_send_data	1
+../user/vofa_debug/debug.c:93:6:vofa_JustFloat_USB_output	1
+../user/vofa_debug/debug.c:113:6:vofa_FireWater_USB_output	1

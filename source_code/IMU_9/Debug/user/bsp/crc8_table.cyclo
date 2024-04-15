@@ -1,0 +1,3 @@
+../user/bsp/crc8_table.c:276:9:crc_high_first	4
+../user/bsp/crc8_table.c:295:10:crc16Calculate	4
+../user/bsp/crc8_table.c:333:9:Calc_CRC8	1
