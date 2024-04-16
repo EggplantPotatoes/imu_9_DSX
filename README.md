@@ -14,6 +14,9 @@
 ![image](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/42123883-c483-435f-9e5f-e63b25e9fec9)
 
 
+![image](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/7a542fee-fa86-4427-9904-6b570911283a)
+
+
 USB输出数据，使用USB CDC（VCP）虚拟串口连接VOFA+上位机软件查看相关数据波形，无需外接U转串模块，也不需要安装驱动
 
 ![image](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/bcfadb9a-b447-4928-8106-482de14f5186)
