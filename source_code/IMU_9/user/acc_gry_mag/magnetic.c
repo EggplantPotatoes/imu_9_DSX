@@ -187,12 +187,8 @@ void mag_set_offset(void)
     imu_9.mag_zero[0] = Xoffset;
     imu_9.mag_zero[1] = Yoffset;
 //    imu_9.mag_zero[2] = Zoffset;
-
-
-	  imu_9.mag_zero[0] = Xoffset;
-	  imu_9.mag_zero[1] = Yoffset;
-//	  imu_9.mag_zero[2] = Zoffset;
-
-
+    imu_9.mag_zero[2] = 0.0f;
+	    //存入
+	    STMFLASH_Write(MAG_ZERO_ADDR,(uint8_t*)&imu_9.mag_zero,6);
 }
 

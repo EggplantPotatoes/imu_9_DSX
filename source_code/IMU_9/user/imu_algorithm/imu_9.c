@@ -66,18 +66,18 @@ void read_flash_information(void)
     	imu_9.acc_zero[2] = 0;
     }
 
-//    if(imu_9.mag_zero[0]==-1)
-//    {
-//    	imu_9.mag_zero[0] = 0;
-//    }
-//    if(imu_9.mag_zero[1]==-1)
-//    {
-//    	imu_9.mag_zero[1] = 0;
-//    }
-//    if(imu_9.mag_zero[2]==-1)
-//    {
-//    	imu_9.mag_zero[2] = 0;
-//    }
+    if(imu_9.mag_zero[0]==-1)
+    {
+    	imu_9.mag_zero[0] = 0;
+    }
+    if(imu_9.mag_zero[1]==-1)
+    {
+    	imu_9.mag_zero[1] = 0;
+    }
+    if(imu_9.mag_zero[2]==-1)
+    {
+    	imu_9.mag_zero[2] = 0;
+    }
 
 
     STMFLASH_Read(OUTPUT_ADDR,(uint8_t*)&imu_9.output_mode,1); //读取数据输出模式

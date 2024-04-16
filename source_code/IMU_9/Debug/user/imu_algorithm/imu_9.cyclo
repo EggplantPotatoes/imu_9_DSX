@@ -1,4 +1,4 @@
-../user/imu_algorithm/imu_9.c:36:6:read_flash_information	8
+../user/imu_algorithm/imu_9.c:36:6:read_flash_information	11
 ../user/imu_algorithm/imu_9.c:92:6:imu_init	1
 ../user/imu_algorithm/imu_9.c:107:6:imu_sample_data	1
 ../user/imu_algorithm/imu_9.c:119:6:imu_data_transition	1
