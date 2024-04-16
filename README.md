@@ -2,7 +2,9 @@
   一款IMU九轴姿态传感器，基于STM32G431RBT6结合三轴加速度计，三轴陀螺仪，三轴磁力计实现的九轴数据融合，可输出欧拉角，四元数等相关数据
 
   模块视频效果请转至B站：https://www.bilibili.com/video/BV1wr42157nD/?vd_source=4c57166c6142504cc135c2135bf9844e
+
   模块购买网址：https://item.taobao.com/item.htm?abbucket=9&id=784316261466&spm=a230r.7195193.1997079397.34.2dbe2731CdNSQF
+  
   
 # 硬件介绍 
 
