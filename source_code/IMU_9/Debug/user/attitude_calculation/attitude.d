@@ -36,9 +36,9 @@ user/attitude_calculation/attitude.o: \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h \
  ../user/attitude_calculation/my_math.h \
- E:/my_storage_home/develop_case/my_products/IMU_9/user/imu_algorithm/imu_9.h \
- E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/acc_gry.h \
- E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/magnetic.h
+ F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/imu_algorithm/imu_9.h \
+ F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/acc_gry_mag/acc_gry.h \
+ F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/acc_gry_mag/magnetic.h
 ../user/attitude_calculation/attitude.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:
@@ -76,6 +76,6 @@ user/attitude_calculation/attitude.o: \
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h:
 ../user/attitude_calculation/my_math.h:
-E:/my_storage_home/develop_case/my_products/IMU_9/user/imu_algorithm/imu_9.h:
-E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/acc_gry.h:
-E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/magnetic.h:
+F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/imu_algorithm/imu_9.h:
+F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/acc_gry_mag/acc_gry.h:
+F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/acc_gry_mag/magnetic.h:

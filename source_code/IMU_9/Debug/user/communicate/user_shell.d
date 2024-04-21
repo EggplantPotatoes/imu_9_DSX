@@ -34,11 +34,11 @@ user/communicate/user_shell.o: ../user/communicate/user_shell.c \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h \
- E:/my_storage_home/develop_case/my_products/IMU_9/user/vofa_debug/debug.h \
- E:/my_storage_home/develop_case/my_products/IMU_9/user/imu_algorithm/imu_9.h \
- E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/acc_gry.h \
- E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/magnetic.h \
- E:/my_storage_home/develop_case/my_products/IMU_9/user/bsp/in_flash.h
+ F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/vofa_debug/debug.h \
+ F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/imu_algorithm/imu_9.h \
+ F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/acc_gry_mag/acc_gry.h \
+ F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/acc_gry_mag/magnetic.h \
+ F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/bsp/in_flash.h
 ../user/communicate/user_shell.h:
 ../user/communicate/shell_driver.h:
 ../Core/Inc/main.h:
@@ -76,8 +76,8 @@ user/communicate/user_shell.o: ../user/communicate/user_shell.c \
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h:
-E:/my_storage_home/develop_case/my_products/IMU_9/user/vofa_debug/debug.h:
-E:/my_storage_home/develop_case/my_products/IMU_9/user/imu_algorithm/imu_9.h:
-E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/acc_gry.h:
-E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/magnetic.h:
-E:/my_storage_home/develop_case/my_products/IMU_9/user/bsp/in_flash.h:
+F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/vofa_debug/debug.h:
+F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/imu_algorithm/imu_9.h:
+F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/acc_gry_mag/acc_gry.h:
+F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/acc_gry_mag/magnetic.h:
+F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/bsp/in_flash.h:

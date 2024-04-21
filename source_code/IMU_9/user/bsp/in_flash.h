@@ -27,6 +27,6 @@ extern union_t  f_data;
 
 void STMFLASH_Write(uint32_t WriteAddr, uint8_t *pBuffer, uint32_t NumToWrite);
 void STMFLASH_Read(uint32_t ReadAddr, uint8_t *pBuffer, uint32_t NumToRead);
-
+int FLASH_ErasePage(uint32_t pageAddress, uint32_t nbPages);
 
 #endif

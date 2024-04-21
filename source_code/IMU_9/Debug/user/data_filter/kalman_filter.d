@@ -34,9 +34,9 @@ user/data_filter/kalman_filter.o: ../user/data_filter/kalman_filter.c \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h \
- E:/my_storage_home/develop_case/my_products/IMU_9/user/imu_algorithm/imu_9.h \
- E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/acc_gry.h \
- E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/magnetic.h
+ F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/imu_algorithm/imu_9.h \
+ F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/acc_gry_mag/acc_gry.h \
+ F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/acc_gry_mag/magnetic.h
 ../user/data_filter/kalman_filter.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:
@@ -73,6 +73,6 @@ user/data_filter/kalman_filter.o: ../user/data_filter/kalman_filter.c \
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h:
-E:/my_storage_home/develop_case/my_products/IMU_9/user/imu_algorithm/imu_9.h:
-E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/acc_gry.h:
-E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/magnetic.h:
+F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/imu_algorithm/imu_9.h:
+F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/acc_gry_mag/acc_gry.h:
+F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/acc_gry_mag/magnetic.h:

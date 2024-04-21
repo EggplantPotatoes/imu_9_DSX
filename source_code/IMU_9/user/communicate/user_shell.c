@@ -65,6 +65,27 @@ int cmd_reset(void *context, int argc, char **argv)
 
     return 0; // 返回执行结果，根据需要进行修改
 }
+
+int cmd_restore(void *context, int argc, char **argv)
+{
+// 在这里执行 read 命令的逻辑
+#if user_shell_debug
+    shell_printf("cmd_reset...parm-num:%d\n", argc);
+#endif
+
+    HAL_FLASH_Unlock();
+    FLASH_ErasePage(USER_FLASH_ADDR_START,1);
+    HAL_Delay(5);
+    HAL_FLASH_Unlock();
+    HAL_Delay(500);
+    __disable_fault_irq();
+    NVIC_SystemReset();
+
+
+
+    return 0; // 返回执行结果，根据需要进行修改
+}
+
 /// @brief 读ad 值
 /// @param context
 /// @param argc
@@ -156,6 +177,7 @@ int cmd_version_read(void *context, int argc, char **argv)
 static console_cmds_t cmds[] = {
     {"cali", cmd_cali, NULL},
     {"reset", cmd_reset, NULL},
+	{"restore", cmd_restore, NULL},
     {"output", cmd_output, NULL},
 
 
