@@ -71,8 +71,8 @@ all: main-build
 main-build: IMU_9_DSX.elf secondary-outputs
 
 # Tool invocations
-IMU_9_DSX.elf IMU_9_DSX.map: $(OBJS) $(USER_OBJS) F:\Jundong\fish_sale\my_board\imu\source_code\IMU_9\STM32G431RBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "IMU_9_DSX.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"F:\Jundong\fish_sale\my_board\imu\source_code\IMU_9\STM32G431RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_9_DSX.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+IMU_9_DSX.elf IMU_9_DSX.map: $(OBJS) $(USER_OBJS) E:\my_storage_home\develop_case\my_products\IMU_9\STM32G431RBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "IMU_9_DSX.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"E:\my_storage_home\develop_case\my_products\IMU_9\STM32G431RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_9_DSX.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

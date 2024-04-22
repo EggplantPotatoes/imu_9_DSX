@@ -99,6 +99,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_USB_Device_Init();
   /* USER CODE BEGIN 2 */
+  HAL_Delay(1000);
   user_shell_init();
   imu_init();
   /* USER CODE END 2 */

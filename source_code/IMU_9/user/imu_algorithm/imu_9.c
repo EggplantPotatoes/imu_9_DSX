@@ -93,6 +93,7 @@ void imu_init(void)
 {
 	uint8_t test_id_ag = 0;
 	uint8_t test_id_mag = 0;
+
 	test_id_ag = acc_gyro_init();
     test_id_mag = mag_init();
 

@@ -37,12 +37,12 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Core/Inc/usart.h ../USB_Device/App/usb_device.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
  ../USB_Device/Target/usbd_conf.h ../Core/Inc/gpio.h \
- F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/acc_gry_mag/acc_gry.h \
- F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/acc_gry_mag/magnetic.h \
- F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/imu_algorithm/imu_9.h \
- F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/bsp/in_flash.h \
- F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/communicate/user_shell.h \
- F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/communicate/shell_driver.h
+ E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/acc_gry.h \
+ E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/magnetic.h \
+ E:/my_storage_home/develop_case/my_products/IMU_9/user/imu_algorithm/imu_9.h \
+ E:/my_storage_home/develop_case/my_products/IMU_9/user/bsp/in_flash.h \
+ E:/my_storage_home/develop_case/my_products/IMU_9/user/communicate/user_shell.h \
+ E:/my_storage_home/develop_case/my_products/IMU_9/user/communicate/shell_driver.h
 ../Core/Inc/main.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:
 ../Core/Inc/stm32g4xx_hal_conf.h:
@@ -86,9 +86,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:
 ../USB_Device/Target/usbd_conf.h:
 ../Core/Inc/gpio.h:
-F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/acc_gry_mag/acc_gry.h:
-F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/acc_gry_mag/magnetic.h:
-F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/imu_algorithm/imu_9.h:
-F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/bsp/in_flash.h:
-F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/communicate/user_shell.h:
-F:/Jundong/fish_sale/my_board/imu/source_code/IMU_9/user/communicate/shell_driver.h:
+E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/acc_gry.h:
+E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/magnetic.h:
+E:/my_storage_home/develop_case/my_products/IMU_9/user/imu_algorithm/imu_9.h:
+E:/my_storage_home/develop_case/my_products/IMU_9/user/bsp/in_flash.h:
+E:/my_storage_home/develop_case/my_products/IMU_9/user/communicate/user_shell.h:
+E:/my_storage_home/develop_case/my_products/IMU_9/user/communicate/shell_driver.h:
