@@ -84,6 +84,10 @@ void read_flash_information(void)
     {
     	imu_9.mag_zero[2] = 0;
     }
+
+    Xsf_temp = xsf_read_buf;
+    Ysf_temp = ysf_read_buf;
+
     if(xsf_read_buf==-1)
     {
     	Xsf_temp = 1000.0f;
@@ -93,8 +97,7 @@ void read_flash_information(void)
     	Ysf_temp = 1000.0f;
     }
 
-    Xsf_temp = xsf_read_buf;
-    Ysf_temp = ysf_read_buf;
+
 
     imu_9.mag_xsf = Xsf_temp/1000.0f; //读取磁力计校准系数
    	imu_9.mag_ysf = Ysf_temp/1000.0f;

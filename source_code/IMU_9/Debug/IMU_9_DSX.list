@@ -35226,35 +35226,38 @@ void read_flash_information(void)
  800ed82:	2200      	movs	r2, #0
  800ed84:	f8a3 2050 	strh.w	r2, [r3, #80]	; 0x50
     }
-    if(xsf_read_buf==-1)
- 800ed88:	f9b7 3006 	ldrsh.w	r3, [r7, #6]
- 800ed8c:	f1b3 3fff 	cmp.w	r3, #4294967295
- 800ed90:	d101      	bne.n	800ed96 <read_flash_information+0x10a>
-    {
-    	Xsf_temp = 1000.0f;
- 800ed92:	4b27      	ldr	r3, [pc, #156]	; (800ee30 <read_flash_information+0x1a4>)
- 800ed94:	60fb      	str	r3, [r7, #12]
-    }
-    if(ysf_read_buf==-1)
- 800ed96:	f9b7 3004 	ldrsh.w	r3, [r7, #4]
- 800ed9a:	f1b3 3fff 	cmp.w	r3, #4294967295
- 800ed9e:	d101      	bne.n	800eda4 <read_flash_information+0x118>
-    {
-    	Ysf_temp = 1000.0f;
- 800eda0:	4b23      	ldr	r3, [pc, #140]	; (800ee30 <read_flash_information+0x1a4>)
- 800eda2:	60bb      	str	r3, [r7, #8]
-    }
 
     Xsf_temp = xsf_read_buf;
- 800eda4:	f9b7 3006 	ldrsh.w	r3, [r7, #6]
- 800eda8:	ee07 3a90 	vmov	s15, r3
- 800edac:	eef8 7ae7 	vcvt.f32.s32	s15, s15
- 800edb0:	edc7 7a03 	vstr	s15, [r7, #12]
+ 800ed88:	f9b7 3006 	ldrsh.w	r3, [r7, #6]
+ 800ed8c:	ee07 3a90 	vmov	s15, r3
+ 800ed90:	eef8 7ae7 	vcvt.f32.s32	s15, s15
+ 800ed94:	edc7 7a03 	vstr	s15, [r7, #12]
     Ysf_temp = ysf_read_buf;
- 800edb4:	f9b7 3004 	ldrsh.w	r3, [r7, #4]
- 800edb8:	ee07 3a90 	vmov	s15, r3
- 800edbc:	eef8 7ae7 	vcvt.f32.s32	s15, s15
- 800edc0:	edc7 7a02 	vstr	s15, [r7, #8]
+ 800ed98:	f9b7 3004 	ldrsh.w	r3, [r7, #4]
+ 800ed9c:	ee07 3a90 	vmov	s15, r3
+ 800eda0:	eef8 7ae7 	vcvt.f32.s32	s15, s15
+ 800eda4:	edc7 7a02 	vstr	s15, [r7, #8]
+
+    if(xsf_read_buf==-1)
+ 800eda8:	f9b7 3006 	ldrsh.w	r3, [r7, #6]
+ 800edac:	f1b3 3fff 	cmp.w	r3, #4294967295
+ 800edb0:	d101      	bne.n	800edb6 <read_flash_information+0x12a>
+    {
+    	Xsf_temp = 1000.0f;
+ 800edb2:	4b1f      	ldr	r3, [pc, #124]	; (800ee30 <read_flash_information+0x1a4>)
+ 800edb4:	60fb      	str	r3, [r7, #12]
+    }
+    if(ysf_read_buf==-1)
+ 800edb6:	f9b7 3004 	ldrsh.w	r3, [r7, #4]
+ 800edba:	f1b3 3fff 	cmp.w	r3, #4294967295
+ 800edbe:	d101      	bne.n	800edc4 <read_flash_information+0x138>
+    {
+    	Ysf_temp = 1000.0f;
+ 800edc0:	4b1b      	ldr	r3, [pc, #108]	; (800ee30 <read_flash_information+0x1a4>)
+ 800edc2:	60bb      	str	r3, [r7, #8]
+    }
+
+
 
     imu_9.mag_xsf = Xsf_temp/1000.0f; //读取磁力计校准系数
  800edc4:	ed97 7a03 	vldr	s14, [r7, #12]
