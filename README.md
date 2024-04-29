@@ -92,6 +92,17 @@ USB输出数据，使用USB CDC（VCP）虚拟串口连接VOFA+上位机软件�
       
  修改数据输出模式之后存到G431内部Flash中，掉电保存。
 
+ 数据输出速率可调整：
+
+      调整数据输出   cmd freq 10  表示数据每10ms输出一次，该指令不会保存
+
+    
+  如果发现数据不准确，可能是因为校准失败了，可以将数据清除， 发送 cmd restore  系统删除所有存储的数据，并复位
+
+
+
+
+
  ![image](https://github.com/EggplantPotatoes/imu_9_DSF/assets/50572578/d44aef3f-734e-4045-a3c2-0d9a5d655076)
 
 
