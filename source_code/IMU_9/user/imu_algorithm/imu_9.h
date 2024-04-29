@@ -38,7 +38,7 @@ typedef struct
 	float pitch;
 	float roll;
 	float yaw;
-	float test;
+	float mag_yaw_test;
 	float yaw_temp;
 	float velocity[3];
 	float displacement[3];
@@ -47,6 +47,8 @@ typedef struct
 	uint8_t shell_cmd_ok;
 	uint8_t output_mode;
 	uint8_t output_flag;
+	uint16_t output_freq;
+	uint32_t time_tick;
 
 } imu_t;
 

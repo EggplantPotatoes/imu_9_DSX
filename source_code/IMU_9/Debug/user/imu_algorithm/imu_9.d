@@ -34,13 +34,13 @@ user/imu_algorithm/imu_9.o: ../user/imu_algorithm/imu_9.c \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h \
- E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/acc_gry.h \
- E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/magnetic.h \
- E:/my_storage_home/develop_case/my_products/IMU_9/user/data_filter/data_filter.h \
- E:/my_storage_home/develop_case/my_products/IMU_9/user/vofa_debug/debug.h \
+ E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/acc_gry_mag/acc_gry.h \
+ E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/acc_gry_mag/magnetic.h \
+ E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/data_filter/data_filter.h \
+ E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/vofa_debug/debug.h \
  ../user/imu_algorithm/attitude_algorithm.h \
- E:/my_storage_home/develop_case/my_products/IMU_9/user/bsp/in_flash.h \
- E:/my_storage_home/develop_case/my_products/IMU_9/user/attitude_calculation/attitude.h
+ E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/bsp/in_flash.h \
+ E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/attitude_calculation/attitude.h
 ../user/imu_algorithm/imu_9.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:
@@ -77,10 +77,10 @@ user/imu_algorithm/imu_9.o: ../user/imu_algorithm/imu_9.c \
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h:
-E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/acc_gry.h:
-E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/magnetic.h:
-E:/my_storage_home/develop_case/my_products/IMU_9/user/data_filter/data_filter.h:
-E:/my_storage_home/develop_case/my_products/IMU_9/user/vofa_debug/debug.h:
+E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/acc_gry_mag/acc_gry.h:
+E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/acc_gry_mag/magnetic.h:
+E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/data_filter/data_filter.h:
+E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/vofa_debug/debug.h:
 ../user/imu_algorithm/attitude_algorithm.h:
-E:/my_storage_home/develop_case/my_products/IMU_9/user/bsp/in_flash.h:
-E:/my_storage_home/develop_case/my_products/IMU_9/user/attitude_calculation/attitude.h:
+E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/bsp/in_flash.h:
+E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/attitude_calculation/attitude.h:

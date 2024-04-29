@@ -36,9 +36,15 @@ int16_t window_mz[WIN_NUM];
 void read_flash_information(void)
 {
 
+	int16_t xsf_read_buf,ysf_read_buf;
+	float Xsf_temp = 1.0f;
+	float Ysf_temp = 1.0f;
+
 	STMFLASH_Read(ACC_ZERO_ADDR,(uint8_t*)&imu_9.acc_zero,6); //读取加速度零点
 	STMFLASH_Read(GYRO_ZERO_ADDR,(uint8_t*)&imu_9.gyro_zero,6); //读取陀螺仪零点
 	STMFLASH_Read(MAG_ZERO_ADDR,(uint8_t*)&imu_9.mag_zero,6);  //读取磁力计零点
+	STMFLASH_Read(MAG_OFFSET_XSF_ADDR,(uint8_t*)&xsf_read_buf,2);  //
+	STMFLASH_Read(MAG_OFFSET_YSF_ADDR,(uint8_t*)&ysf_read_buf,2);  //
 
     if(imu_9.acc_zero[0]==-1) //默认0点是0
     {
@@ -78,7 +84,20 @@ void read_flash_information(void)
     {
     	imu_9.mag_zero[2] = 0;
     }
+    if(xsf_read_buf==-1)
+    {
+    	Xsf_temp = 1000.0f;
+    }
+    if(ysf_read_buf==-1)
+    {
+    	Ysf_temp = 1000.0f;
+    }
 
+    Xsf_temp = xsf_read_buf;
+    Ysf_temp = ysf_read_buf;
+
+    imu_9.mag_xsf = Xsf_temp/1000.0f; //读取磁力计校准系数
+   	imu_9.mag_ysf = Ysf_temp/1000.0f;
 
     STMFLASH_Read(OUTPUT_ADDR,(uint8_t*)&imu_9.output_mode,1); //读取数据输出模式
     if(imu_9.output_mode==0xFF)
@@ -99,7 +118,7 @@ void imu_init(void)
 
     read_flash_information();
     init_attitude(&attitude);
-
+    imu_9.output_freq = 1;
     HAL_Delay(100);
     HAL_TIM_Base_Start_IT(&htim2);
 }
@@ -128,8 +147,8 @@ void imu_data_transition(int16_t ax,int16_t ay,int16_t az,int16_t gx,int16_t gy,
 	imu_9.f_gyro[1] = (float)(gy-imu_9.gyro_zero[1]) / 57.1f;
 	imu_9.f_gyro[2] = (float)(gz-imu_9.gyro_zero[2]) / 57.1f;
 
-	imu_9.f_mag[0] = (float)(mx+imu_9.mag_zero[0]) * 1.5f;
-	imu_9.f_mag[1] = (float)(my+imu_9.mag_zero[1]) * 1.5f;
+	imu_9.f_mag[0] = (float)(imu_9.mag_xsf*mx+imu_9.mag_zero[0]) * 1.5f;
+	imu_9.f_mag[1] = (float)(imu_9.mag_ysf*my+imu_9.mag_zero[1]) * 1.5f;
 	imu_9.f_mag[2] = (float)(mz+imu_9.mag_zero[2]) * 1.5f;
 
 
@@ -194,7 +213,7 @@ void data_output_mode(uint8_t mode)  //数据输出模式,vofa+查看曲线图�
 	switch(mode)
 	{
 	case 0:  //欧拉角输出
-		vofa_FireWater_USB_output(attitude.data.rol, attitude.data.pitch, attitude.data.yaw,0.0f);
+		vofa_FireWater_USB_output(attitude.data.rol, attitude.data.pitch, attitude.data.yaw,imu_9.mag_yaw_test);
 		break;
 	case 1: //四元数输出
 		vofa_FireWater_USB_output(attitude.process.quaternion[0],attitude.process.quaternion[1],attitude.process.quaternion[2],attitude.process.quaternion[3]);
@@ -214,6 +233,8 @@ void data_output_mode(uint8_t mode)  //数据输出模式,vofa+查看曲线图�
 		break;
 	case 6://地磁数据输出
 		usb_printf("simples:%f,%f,%f,%f,%f,%f,%f,%f,%f\n",imu_9.f_acc[0],imu_9.f_acc[1],imu_9.f_acc[2],imu_9.f_gyro[0],imu_9.f_gyro[1],imu_9.f_gyro[2],imu_9.f_mag[0],imu_9.f_mag[1],imu_9.f_mag[2]);
+//		usb_printf("%f,%f,%f,%f,%f,%f,%f,%f,%f\n",imu_9.f_acc[0],imu_9.f_acc[1],imu_9.f_acc[2],imu_9.f_gyro[0],imu_9.f_gyro[1],imu_9.f_gyro[2],imu_9.f_mag[0],imu_9.f_mag[1],imu_9.f_mag[2]);
+
 		break;
 	default:
 
@@ -230,15 +251,15 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 	if (htim == (&htim2))  //
 	{
 		TimerCount++;
-		if(TimerCount >= 1)  //1ms采集一次传感器数据  1KHz
+		if(TimerCount >= imu_9.output_freq)  //1ms采集一次传感器数据  1KHz
 		{
 			if(imu_9.cali_flag==0) //校准时不采集输出
 			{
 				HAL_GPIO_TogglePin(TEST_GPIO_Port, TEST_Pin); //测试引脚PA7，可使用示波器测量，确定采样时间是否准确
 				imu_final_data_get(); //原始数据采样
 				calculate_attitude(&attitude, 0.001) ; //姿态解算
-//				mag_yaw_test = atan2(imu_9.f_mag[1],imu_9.f_mag[0])*57.2957795131f;
-
+				imu_9.mag_yaw_test = atan2(imu_9.f_mag[1],imu_9.f_mag[0])*57.2957795131f;
+				imu_9.time_tick++;
 				data_output_mode(imu_9.output_mode);  //数据输出,vofa+查看曲线图形
 			}
 

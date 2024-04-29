@@ -136,7 +136,8 @@ void mag_set_offset(void)
 
 	static float Xsf;
 	static float Ysf;
-//	static float Zsf;
+
+    int16_t xsf_buf,ysf_buf;
 
 	while(cnt<MAG_OFFSET_TIMES)
 	{
@@ -179,16 +180,25 @@ void mag_set_offset(void)
     	Ysf = 1;
     }
 
-
     Xoffset = ( (mag_x_max - mag_x_min)/2 - mag_x_max) *Xsf;
     Yoffset = ( (mag_y_max - mag_y_min)/2 - mag_y_max) *Ysf;
 //    Zoffset = ( (mag_z_max-mag_z_min)/2 - mag_z_max) *Xsf;
+
+    imu_9.mag_xsf = Xsf;
+    imu_9.mag_ysf = Ysf;
 
     imu_9.mag_zero[0] = Xoffset;
     imu_9.mag_zero[1] = Yoffset;
 //    imu_9.mag_zero[2] = Zoffset;
     imu_9.mag_zero[2] = 0.0f;
+
+    xsf_buf =(uint16_t) (Xsf*1000);
+    ysf_buf =(uint16_t) (Ysf*1000);
+
 	    //存入
-	    STMFLASH_Write(MAG_ZERO_ADDR,(uint8_t*)&imu_9.mag_zero,6);
+	STMFLASH_Write(MAG_ZERO_ADDR,(uint8_t*)&imu_9.mag_zero,6);
+	STMFLASH_Write(MAG_OFFSET_XSF_ADDR,(uint8_t*)&xsf_buf,2);
+	STMFLASH_Write(MAG_OFFSET_YSF_ADDR,(uint8_t*)&ysf_buf,2);
+
 }
 

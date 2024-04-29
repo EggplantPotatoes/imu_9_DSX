@@ -4,4 +4,4 @@
 ../user/acc_gry_mag/magnetic.c:65:13:mag_wait_data_update	16	static
 ../user/acc_gry_mag/magnetic.c:77:6:mag_sample_data	24	static
 ../user/acc_gry_mag/magnetic.c:90:9:mag_init	24	static
-../user/acc_gry_mag/magnetic.c:129:6:mag_set_offset	32	static
+../user/acc_gry_mag/magnetic.c:129:6:mag_set_offset	40	static

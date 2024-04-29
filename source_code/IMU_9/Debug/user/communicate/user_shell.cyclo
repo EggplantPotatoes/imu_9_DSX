@@ -4,6 +4,7 @@
 ../user/communicate/user_shell.c:69:5:cmd_restore	0
 ../user/communicate/user_shell.c:94:5:cmd_output	9
 ../user/communicate/user_shell.c:163:5:cmd_version_read	2
-../user/communicate/user_shell.c:192:6:user_shell_init	2
-../user/communicate/user_shell.c:204:5:user_shell_recive_bytes	1
-../user/communicate/user_shell.c:212:6:user_shell_console_process	1
+../user/communicate/user_shell.c:178:5:cmd_modify_freq	2
+../user/communicate/user_shell.c:206:6:user_shell_init	2
+../user/communicate/user_shell.c:218:5:user_shell_recive_bytes	1
+../user/communicate/user_shell.c:226:6:user_shell_console_process	1

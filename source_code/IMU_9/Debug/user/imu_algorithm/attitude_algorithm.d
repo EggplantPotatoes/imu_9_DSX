@@ -36,10 +36,10 @@ user/imu_algorithm/attitude_algorithm.o: \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h \
  ../user/imu_algorithm/imu_9.h \
- E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/acc_gry.h \
- E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/magnetic.h \
- E:/my_storage_home/develop_case/my_products/IMU_9/user/data_filter/data_filter.h \
- E:/my_storage_home/develop_case/my_products/IMU_9/user/vofa_debug/debug.h
+ E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/acc_gry_mag/acc_gry.h \
+ E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/acc_gry_mag/magnetic.h \
+ E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/data_filter/data_filter.h \
+ E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/vofa_debug/debug.h
 ../user/imu_algorithm/attitude_algorithm.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:
@@ -77,7 +77,7 @@ user/imu_algorithm/attitude_algorithm.o: \
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h:
 ../user/imu_algorithm/imu_9.h:
-E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/acc_gry.h:
-E:/my_storage_home/develop_case/my_products/IMU_9/user/acc_gry_mag/magnetic.h:
-E:/my_storage_home/develop_case/my_products/IMU_9/user/data_filter/data_filter.h:
-E:/my_storage_home/develop_case/my_products/IMU_9/user/vofa_debug/debug.h:
+E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/acc_gry_mag/acc_gry.h:
+E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/acc_gry_mag/magnetic.h:
+E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/data_filter/data_filter.h:
+E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/vofa_debug/debug.h:

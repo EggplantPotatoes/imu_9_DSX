@@ -174,11 +174,25 @@ int cmd_version_read(void *context, int argc, char **argv)
     return 0; // 返回执行结果，根据需要进行修改
 }
 
+
+int cmd_modify_freq(void *context, int argc, char **argv)
+{
+
+	if (argc >= 1)
+	{
+		imu_9.output_freq = atoi(argv[0]);
+
+	}
+
+}
+
+
 static console_cmds_t cmds[] = {
     {"cali", cmd_cali, NULL},
     {"reset", cmd_reset, NULL},
 	{"restore", cmd_restore, NULL},
     {"output", cmd_output, NULL},
+	{"freq", cmd_modify_freq, NULL},
 
 
 };

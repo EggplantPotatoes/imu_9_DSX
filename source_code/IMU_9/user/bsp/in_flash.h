@@ -13,6 +13,8 @@
 #define MAG_ZERO_ADDR  GYRO_ZERO_ADDR+6
 
 #define OUTPUT_ADDR      MAG_ZERO_ADDR+6
+#define MAG_OFFSET_XSF_ADDR      OUTPUT_ADDR+2
+#define MAG_OFFSET_YSF_ADDR      MAG_OFFSET_XSF_ADDR+2
 
 typedef union
 {
