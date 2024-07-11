@@ -34,11 +34,11 @@ user/acc_gry_mag/acc_gry.o: ../user/acc_gry_mag/acc_gry.c \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h \
- E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/bsp/IIC_bus.h \
- E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/imu_algorithm/imu_9.h \
- E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/acc_gry_mag/acc_gry.h \
- E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/acc_gry_mag/magnetic.h \
- E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/bsp/in_flash.h
+ E:/my_storage_home/develop_case/IMU/IMU_9/user/bsp/IIC_bus.h \
+ E:/my_storage_home/develop_case/IMU/IMU_9/user/imu_algorithm/imu_9.h \
+ E:/my_storage_home/develop_case/IMU/IMU_9/user/acc_gry_mag/acc_gry.h \
+ E:/my_storage_home/develop_case/IMU/IMU_9/user/acc_gry_mag/magnetic.h \
+ E:/my_storage_home/develop_case/IMU/IMU_9/user/bsp/in_flash.h
 ../user/acc_gry_mag/acc_gry.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:
@@ -75,8 +75,8 @@ user/acc_gry_mag/acc_gry.o: ../user/acc_gry_mag/acc_gry.c \
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h:
-E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/bsp/IIC_bus.h:
-E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/imu_algorithm/imu_9.h:
-E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/acc_gry_mag/acc_gry.h:
-E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/acc_gry_mag/magnetic.h:
-E:/my_storage_home/develop_case/my_products/IMU/IMU_9/user/bsp/in_flash.h:
+E:/my_storage_home/develop_case/IMU/IMU_9/user/bsp/IIC_bus.h:
+E:/my_storage_home/develop_case/IMU/IMU_9/user/imu_algorithm/imu_9.h:
+E:/my_storage_home/develop_case/IMU/IMU_9/user/acc_gry_mag/acc_gry.h:
+E:/my_storage_home/develop_case/IMU/IMU_9/user/acc_gry_mag/magnetic.h:
+E:/my_storage_home/develop_case/IMU/IMU_9/user/bsp/in_flash.h:

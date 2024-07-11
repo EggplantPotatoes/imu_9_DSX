@@ -217,13 +217,14 @@ void data_output_mode(uint8_t mode)  //数据输出模式,vofa+查看曲线图�
 	{
 	case 0:  //欧拉角输出
 		vofa_FireWater_USB_output(attitude.data.rol, attitude.data.pitch, attitude.data.yaw,imu_9.mag_yaw_test);
+//		vofa_FireWater_output(attitude.data.rol, attitude.data.pitch, attitude.data.yaw);
 		break;
 	case 1: //四元数输出
 		vofa_FireWater_USB_output(attitude.process.quaternion[0],attitude.process.quaternion[1],attitude.process.quaternion[2],attitude.process.quaternion[3]);
 
 		break;
-	case 2://世界加速度输出
-		vofa_FireWater_USB_output(attitude.data.acc_world.x,attitude.data.acc_world.y,attitude.data.acc_world.z,2.0f);
+	case 2://线性加速度输出
+		vofa_FireWater_USB_output(attitude.data.acc_correct.x,attitude.data.acc_correct.y,attitude.data.acc_correct.z-1000.0f,2.0f);
 		break;
 	case 3://加速度 数据输出  单位：g(m/s^2)
 		vofa_FireWater_USB_output(imu_9.f_acc[0],imu_9.f_acc[1],imu_9.f_acc[2],3.0f);

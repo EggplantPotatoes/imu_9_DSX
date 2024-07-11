@@ -102,6 +102,7 @@ int main(void)
   HAL_Delay(1000);
   user_shell_init();
   imu_init();
+//  uart_debug_init();
   /* USER CODE END 2 */
 
   /* Infinite loop */

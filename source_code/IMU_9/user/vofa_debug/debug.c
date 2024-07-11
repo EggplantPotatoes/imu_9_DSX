@@ -21,6 +21,14 @@ int fputc(int ch, FILE *f)
   return ch;
 }
 
+
+//重写printf函数
+int _write(int32_t file, uint8_t *ptr, int32_t len)
+{
+	HAL_UART_Transmit(&huart1, ptr, len, HAL_MAX_DELAY);
+  return len;
+}
+
 /**
  * 函数功能: 重定向c库函数getchar,scanf到DEBUG_USARTx
  * 输入参数: 无
